@@ -1,0 +1,28 @@
+{
+  "generated": "2026-10-26T14:10:33.948192",
+  "engines_tested": [
+    "postgres"
+  ],
+  "oracle_tested": false,
+  "oracle_note": "Oracle 21c has no macOS distribution; not empirically tested in this experiment. Table 3's Oracle column remains a documented design target.",
+  "schema_note": "Synthetic TPC-H-shaped data (not official dbgen), scale ~1x (~600k lineitem rows).",
+  "per_engine": {
+    "postgres": {
+      "plans": 828,
+      "nodes_total": 1972,
+      "nodes_normalized": 1867,
+      "pct": 94.68
+    }
+  },
+  "overall": {
+    "plans": 828,
+    "nodes_total": 1972,
+    "nodes_normalized": 1867,
+    "pct": 94.68
+  },
+  "unmapped_node_types": {
+    "postgres:Hash": 105
+  },
+  "mysql_tested": false,
+  "mysql_note": "Attempted via Homebrew (both the current mysql formula and the pinned mysql@8.0 formula) and genuinely failed to build on this system: the current formula's python@3.15 build dependency requires clang tail-call support this toolchain lacks, and mysql@8.0's own build invokes a linker flag (-no_warn_duplicate_libraries) too new for this system's ld. Not a transient failure; not retried further. Table 3's MySQL column remains a documented design target."
+}

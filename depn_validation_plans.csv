@@ -1,0 +1,829 @@
+engine,query,nodes_total,nodes_normalized,nodes_unmapped
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 1500",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 950,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 225",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 123750",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 1 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 415",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 120000",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'FUR",10,9,1
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2023-07-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 141000",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'FUR",10,9,1
+postgres,"SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'HOUSEHOLD'",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 49 AND l_discount > 0.06",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2024-04-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 45 AND l_discount > 0.06",2,2,0
+postgres,"SELECT c_custkey, c_acctbal FROM customer WHERE c_mktsegment = 'HOUSEHOLD' ORDER BY c_acctbal DESC",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 790,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 610,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 33 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 9 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 13 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 5 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 135",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 31 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 315",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 24 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 13 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 33 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 34 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 87750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 22 AND l_discount > 0.06",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 80,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 47250",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 960,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 72000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 190",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 38 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'REG AIR'",4,3,1
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'BUI",10,9,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 410,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'MAC",10,9,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 45",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 14 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 48000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 48 AND l_discount > 0.06",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 140,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 112500",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 375",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 68250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2024-01-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 7 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 95",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 200,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 4500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2023-01-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 18 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 67500",1,1,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'FOB'",4,3,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 770,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 475",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 2 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 410",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 91500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 96000",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'HOU",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 29 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2025-04-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 53250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2023-10-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 41250",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 990,2,2,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2015-01-01' AND o_orderdate < '2016-01-01' ),6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 6000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 20250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 21750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2020-01-15'",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 340,2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2015-07-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 65250",1,1,0
+postgres,"SELECT l_linestatus, COUNT(*), SUM(l_quantity), AVG(l_extendedprice) FROM lineitem WHERE l_returnflag = 'A' GROUP BY l_linestatus",5,5,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 22 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2016-10-15'",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 630,2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 12 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 395",4,4,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2020-01-01' AND o_orderdate < '2021-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT c_name, o_orderkey, o_totalprice FROM customer JOIN orders ON c_custkey = o_custkey WHERE c_mktsegment = 'BUILDING'",4,3,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 130,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 118500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 3 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 18 AND l_discount > 0.02",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2020-01-01' AND o_orderdate < '2021-01-01' ),6,5,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 20,2,2,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 8000 AND 8499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 23 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 26 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 6750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 7 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 21000",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 18 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'FUR",10,9,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 15750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 260,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 35250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 111000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 31 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 22500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 29 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 11 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 365",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 105000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 7 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 85",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 135000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 19 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2015-04-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 76500",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2022-01-01' AND o_orderdate < '2023-01-01' ),6,5,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 9 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 85500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 4 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 400",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 140",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 43500",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 0 AND 499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 9000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 47 AND l_discount > 0.06",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2017-07-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 30 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 240",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 730,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 8 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 29 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 22 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 130",4,4,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'AUT",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 17 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 94500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 41 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 43 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 16500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 43 AND l_discount > 0.06",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 820,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 4 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 81000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 13 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 123000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 8 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 24 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 70,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 128250",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 170,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 340",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 78000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 48 AND l_discount > 0.04",2,2,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 9000 AND 9499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 30 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 93000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 34 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 127500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 25 AND l_discount > 0.08",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 880,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 27 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 142500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 33 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 126000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 3000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 147000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 90750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 870,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 750,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'MAC",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 25 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 26 AND l_discount > 0.06",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2023-01-01' AND o_orderdate < '2024-01-01' ),6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 70500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 106500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 36 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 34500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 97500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 46 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 79500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 44 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 35",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 138750",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 255",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 125",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 17 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 120750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 101250",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 7500 AND 7999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 92250",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2019-01-01' AND o_orderdate < '2020-01-01' ),6,5,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 15 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 40 AND l_discount > 0.06",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 160,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 132750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 77250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 6 AND l_discount > 0.04",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'AUT",10,9,1
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 10500 AND 10999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 17 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 20 AND l_discount > 0.00",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 22 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 32 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 31500",1,1,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'AIR'",4,3,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 47 AND l_discount > 0.02",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 30 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 130500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 40 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 59250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 18 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 460",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 30 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'SHIP'",4,3,1
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'BUI",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 6 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 51750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2020-07-15'",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 180",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 15000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 8 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 86250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 62250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2021-04-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2021-10-15'",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 290,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 26 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 27000",1,1,0
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'FOB'",10,7,3
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 2 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 35 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 5 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 48 AND l_discount > 0.08",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 620,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 49 AND l_discount > 0.04",2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 2 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 32 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 40 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 8 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 60",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 23 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'MAIL'",4,3,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 40",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 235",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 420",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 16 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2019-01-01' AND o_orderdate < '2020-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 12 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 30 AND l_discount > 0.08",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 10,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 250",4,4,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'AUT",10,9,1
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 10 GROUP BY s_name, n_name",7,6,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 270,2,2,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2023-01-01' AND o_orderdate < '2024-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 36 AND l_discount > 0.08",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2023-04-15'",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 5",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 16 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 50250",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 7000 AND 7499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 14 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 4 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 18 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 149250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 45 AND l_discount > 0.02",1,1,0
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'AIR'",10,7,3
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 2 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 46 AND l_discount > 0.02",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 18 AND l_discount > 0.04",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 500,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 121500",1,1,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2024-01-01' AND o_orderdate < '2025-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 27750",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 210",4,4,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2017-01-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 1 AND l_discount > 0.08",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 15 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 35 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 30750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 114750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 135750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 88500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 40 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 75",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 180,2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 23 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 111750",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 30",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 70",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 37500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 7 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 46 AND l_discount > 0.08",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 10 AND l_discount > 0.08",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 300,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 0,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 129750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 250,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 700,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 26250",1,1,0
+postgres,"SELECT c_name, o_orderkey, o_totalprice FROM customer JOIN orders ON c_custkey = o_custkey WHERE c_mktsegment = 'MACHINERY'",4,3,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 12750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 330,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 320",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 155",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 840,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 44 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 470",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 24 AND l_discount > 0.08",1,1,0
+postgres,"SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'AUTOMOBILE'",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 3 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 82500",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 3 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 45 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 0",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 75750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 11250",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 12000 AND 12499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2022-04-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 78750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2015-01-15'",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 490,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 1 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 89250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 139500",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 120,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 146250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 29 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2017-04-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_orderpriority = '1-URGENT' ORDER BY o_totalprice",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2015-10-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 9 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_linestatus, COUNT(*), SUM(l_quantity), AVG(l_extendedprice) FROM lineitem WHERE l_returnflag = 'N' GROUP BY l_linestatus",5,5,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 32 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 37 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 116250",1,1,0
+postgres,"SELECT c_custkey, c_acctbal FROM customer WHERE c_mktsegment = 'MACHINERY' ORDER BY c_acctbal DESC",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 14 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 350",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 13500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 42 AND l_discount > 0.06",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 12000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 24750",1,1,0
+postgres,"SELECT c_custkey, c_acctbal FROM customer WHERE c_mktsegment = 'FURNITURE' ORDER BY c_acctbal DESC",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 220",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 37 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2024-07-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 34 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 230",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 37 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 27 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 2 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 6 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 43 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 43 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 450,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 10 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 13 AND l_discount > 0.04",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'MAC",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 39 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 260",4,4,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 2500 AND 2999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 16 GROUP BY s_name, n_name",7,6,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 550,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 20 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 66750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 30,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 390,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 780,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 330",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 84750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 940,2,2,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2018-01-01' AND o_orderdate < '2019-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 25500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 126750",1,1,0
+postgres,"SELECT * FROM ( SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'FURNITURE' ) AS seg_customers WHERE c_custkey < 5000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 1 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 6500 AND 6999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 125250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 84000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2021-07-15'",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 0",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 19 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 830,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 28500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 100500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 69750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 18750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 33750",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 500 AND 999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 119250",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 295",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 30000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 102750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 44250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2018-07-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 41 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 54000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 22 AND l_discount > 0.04",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 510,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 20 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 28 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 185",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 46 AND l_discount > 0.04",2,2,0
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'TRUCK'",10,7,3
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 670,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 10 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 39 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 28 AND l_discount > 0.08",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 150,2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 9 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 107250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 17250",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 400,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 124500",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 480,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 15 AND l_discount > 0.06",1,1,0
+postgres,"SELECT * FROM ( SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'BUILDING' ) AS seg_customers WHERE c_custkey < 5000",1,1,0
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'SHIP'",10,7,3
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 370,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 19 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 455",4,4,0
+postgres,"SELECT * FROM ( SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'HOUSEHOLD' ) AS seg_customers WHERE c_custkey < 5000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 490",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 530,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 39 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 6 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 43 AND l_discount > 0.04",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 11 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 148500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 25 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 6 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 90000",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 470,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 9 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 325",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 21 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 99750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 21 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 11000 AND 11499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 137250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2018-10-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 7500",1,1,0
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'REG AIR",10,7,3
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 45 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 35 AND l_discount > 0.04",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2021-01-01' AND o_orderdate < '2022-01-01' ),6,5,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 115",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 14250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 19 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 61500",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 290",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 132000",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'AUT",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 23 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2020-04-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 133500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 36000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 32250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2022-07-15'",2,2,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 4500 AND 4999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 33 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 450",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 24 AND l_discount > 0.04",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 50,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 345",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 42000",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 110,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 445",4,4,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'HOU",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 47 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 4000 AND 4499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 141750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 87000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 270",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 110",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 41 AND l_discount > 0.06",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 440,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 31 AND l_discount > 0.08",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 17 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 72750",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2024-01-01' AND o_orderdate < '2025-01-01' ),6,5,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 440",4,4,0
+postgres,"SELECT c_custkey, c_acctbal FROM customer WHERE c_mktsegment = 'BUILDING' ORDER BY c_acctbal DESC",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 11 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 165",4,4,0
+postgres,"SELECT l_linestatus, COUNT(*), SUM(l_quantity), AVG(l_extendedprice) FROM lineitem WHERE l_returnflag = 'R' GROUP BY l_linestatus",5,5,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 690,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 15 AND l_discount > 0.04",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'HOU",10,9,1
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2016-04-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2025-07-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 37 AND l_discount > 0.06",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 710,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 45750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 48 AND l_discount > 0.00",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 23 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 12 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2022-10-15'",2,2,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2025-01-01' AND o_orderdate < '2026-01-01' ),6,5,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 860,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 9750",1,1,0
+postgres,"SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'MACHINERY'",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 28 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 63000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 12 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 102000",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 220,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 105750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2018-01-15'",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 380,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 27 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 385",4,4,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 20 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 63750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 210,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 10 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2024-10-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 45 AND l_discount > 0.04",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 140250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 45000",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2017-01-01' AND o_orderdate < '2018-01-01' ),6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 134250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 44 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 3000 AND 3499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'BUI",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 10 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 1500 AND 1999 GROUP BY o_custkey",3,3,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 930,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'BUI",10,9,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 40,2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 7 GROUP BY s_name, n_name",7,6,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 320,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 435",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 36 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 850,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 480",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 7 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_orderpriority = '5-LOW' ORDER BY o_totalprice",2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 0 GROUP BY s_name, n_name",7,6,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 230,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 34 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 110250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 18000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 24 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2025-10-15'",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 430",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 14 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 36 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 28 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 41 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 74250",1,1,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2016-01-01' AND o_orderdate < '2017-01-01' ),6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 19500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 75000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 1 AND l_discount > 0.00",1,1,0
+postgres,"SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'FURNITURE'",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 136500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 27 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 11 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 120",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 170",4,4,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 5500 AND 5999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 1 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 10000 AND 10499 GROUP BY o_custkey",3,3,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 910,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 51000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 145",4,4,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 5000 AND 5499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'RAIL'",4,3,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 12 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 380",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 54750",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 52500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 114000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 20 AND l_discount > 0.06",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'HOU",10,9,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 900,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 46500",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 29250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 42 AND l_discount > 0.04",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 60,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'MAC",10,9,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 40500",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'FUR",10,9,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 8250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 103500",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 460,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 14 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 19 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2017-10-15'",2,2,0
+postgres,"SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'BUILDING'",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 38 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 33 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_orderpriority = '3-MEDIUM' ORDER BY o_totalprice",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 108750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 38 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 49 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 10500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 16 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 131250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 99000",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 24 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 21 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_orderpriority = '4-NOT SPECIFIED' ORDER BY o_totalprice",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 35 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 570,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 4 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 42 AND l_discount > 0.00",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 19 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 66000",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 13 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 5 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 71250",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 280",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 28 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 37 AND l_discount > 0.02",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 8 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 3500 AND 3999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 275",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 980,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 96750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 32 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 20",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 350,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 117000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 15 AND l_discount > 0.08",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2019-10-15'",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 305",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 3 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 3 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 144750",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 55",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 495",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 11 AND l_discount > 0.06",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 100,2,2,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2021-01-01' AND o_orderdate < '2022-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 104250",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 335",4,4,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 17 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT c_name, o_orderkey, o_totalprice FROM customer JOIN orders ON c_custkey = o_custkey WHERE c_mktsegment = 'HOUSEHOLD'",4,3,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 5 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 160",4,4,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2018-04-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 60750",1,1,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2022-01-01' AND o_orderdate < '2023-01-01' ORDER BY o_orderkey",6,5,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 580,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 26 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 108000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 39 AND l_discount > 0.08",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 12 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 355",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 65",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 20 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 145500",1,1,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2025-01-01' AND o_orderdate < '2026-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 300",4,4,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 6 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 42 AND l_discount > 0.08",2,2,0
+postgres,"SELECT c_name, o_orderkey, o_totalprice FROM customer JOIN orders ON c_custkey = o_custkey WHERE c_mktsegment = 'FURNITURE'",4,3,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 47 AND l_discount > 0.04",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 117750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 560,2,2,0
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'MAIL'",10,7,3
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 190,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'FUR",10,9,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 21 AND l_discount > 0.08",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 640,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 144000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 25",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 90",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 39 AND l_discount > 0.00",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 24000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 55500",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 920,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 760,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 49 AND l_discount > 0.00",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 56250",1,1,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2016-01-01' AND o_orderdate < '2017-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT c_name, o_orderkey, l_quantity, p_name FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'RAIL'",10,7,3
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 35 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 390",4,4,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2015-01-01' AND o_orderdate < '2016-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 150",4,4,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 600,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 50",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 129000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 425",4,4,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 8500 AND 8999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 15 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 740,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'BUI",10,9,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 430,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 465",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 60000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2019-01-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 23250",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 9500 AND 9999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 32 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 36 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 485",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 138000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 17 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, p_name FROM lineitem JOIN part ON l_partkey = p_partkey WHERE l_shipmode = 'TRUCK'",4,3,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 80250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 39750",1,1,0
+postgres,"SELECT * FROM ( SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'MACHINERY' ) AS seg_customers WHERE c_custkey < 5000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 5250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 33000",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 27 AND l_discount > 0.04",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 2 AND l_discount > 0.00",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 240,2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'MAC",10,9,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 57750",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 720,2,2,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 5 GROUP BY s_name, n_name",7,6,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 590,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 34 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 540,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 57000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 310",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 58500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 46 AND l_discount > 0.06",2,2,0
+postgres,"SELECT c_custkey, c_acctbal FROM customer WHERE c_mktsegment = 'AUTOMOBILE' ORDER BY c_acctbal DESC",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 520,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 90,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 29 AND l_discount > 0.08",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 5 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 69000",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 15",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 73500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 16 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 8 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 310,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 31 AND l_discount > 0.06",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 360,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 38250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 122250",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 195",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 93750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 49 AND l_discount > 0.02",2,2,0
+postgres,"SELECT o_orderkey, c_name FROM orders JOIN customer ON o_custkey = c_custkey WHERE o_orderdate >= '2017-01-01' AND o_orderdate < '2018-01-01' ORDER BY o_orderkey",6,5,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 48750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2020-10-15'",2,2,0
+postgres,SELECT c_name FROM customer WHERE c_custkey IN ( SELECT o_custkey FROM orders WHERE o_orderdate >= '2018-01-01' AND o_orderdate < '2019-01-01' ),6,5,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 21 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 3750",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 14 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 13 AND l_discount > 0.00",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 680,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 215",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 81750",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 205",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 25 AND l_discount > 0.04",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 370",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 42750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2025-01-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 25 AND l_discount > 0.06",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 1000 AND 1499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2021-01-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 115500",1,1,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'HOU",10,9,1
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2016-01-15'",2,2,0
+postgres,"SELECT c_name, o_orderpriority, SUM(l_extendedprice * (1 - l_discount)) AS revenue FROM customer JOIN orders ON c_custkey = o_custkey JOIN lineitem ON o_orderkey = l_orderkey WHERE c_mktsegment = 'AUT",10,9,1
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 113250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 39000",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 147750",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 40 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_orderpriority = '2-HIGH' ORDER BY o_totalprice",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 80",4,4,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 2000 AND 2499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 31 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 4 AND l_discount > 0.00",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 650,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 800,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 360",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 109500",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 44 AND l_discount > 0.06",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 38 AND l_discount > 0.02",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 970,2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 49500",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 420,2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 810,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 405",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 200",4,4,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 4 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 38 AND l_discount > 0.08",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2019-04-15'",2,2,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 660,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 41 AND l_discount > 0.08",2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 285",4,4,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 175",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 42 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 95250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 44 AND l_discount > 0.04",2,2,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2016-07-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 11 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 11500 AND 11999 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 105",4,4,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2019-07-15'",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 36750",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 100",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 23 AND l_discount > 0.06",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 26 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 47 AND l_discount > 0.00",2,2,0
+postgres,"SELECT * FROM ( SELECT c_custkey, c_name FROM customer WHERE c_mktsegment = 'AUTOMOBILE' ) AS seg_customers WHERE c_custkey < 5000",1,1,0
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 280,2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 9 AND l_discount > 0.00",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 16 AND l_discount > 0.08",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 143250",1,1,0
+postgres,"SELECT c_name, o_orderkey, o_totalprice FROM customer JOIN orders ON c_custkey = o_custkey WHERE c_mktsegment = 'AUTOMOBILE'",4,3,1
+postgres,SELECT o_orderkey FROM orders WHERE o_custkey = 890,2,2,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 10",4,4,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 3 AND l_discount > 0.02",1,1,0
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 245",4,4,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 2250",1,1,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 64500",1,1,0
+postgres,"SELECT s_name, n_name, COUNT(*) FROM supplier JOIN nation ON s_nationkey = n_nationkey JOIN partsupp ON s_suppkey = ps_suppkey WHERE n_nationkey = 21 GROUP BY s_name, n_name",7,6,1
+postgres,"SELECT o_orderkey, l_linenumber FROM orders JOIN lineitem ON o_orderkey = l_orderkey WHERE o_custkey = 265",4,4,0
+postgres,"SELECT o_custkey, COUNT(*), SUM(o_totalprice) FROM orders WHERE o_custkey BETWEEN 6000 AND 6499 GROUP BY o_custkey",3,3,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 98250",1,1,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 22 AND l_discount > 0.02",1,1,0
+postgres,"SELECT l_orderkey, l_quantity FROM lineitem WHERE l_shipdate = '2022-01-15'",2,2,0
+postgres,"SELECT l_orderkey, l_quantity, l_discount FROM lineitem WHERE l_quantity > 48 AND l_discount > 0.02",2,2,0
+postgres,"SELECT o_orderkey, o_totalprice FROM orders WHERE o_totalprice > 83250",1,1,0
