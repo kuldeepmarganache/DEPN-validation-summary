@@ -4,8 +4,7 @@ QuerySage DEPN Validation Supplementary Material
 This is the data referenced in the manuscript's Data Availability
 declaration and Section 8.4: the real execution plans used to validate
 DEPN (the Dialect-Neutral Execution Plan Normalizer), and the scripts that
-generated, captured, and evaluated them. It accompanies
-QuerySage_AIR_Springer_submission_Final.docx.
+generated, captured, and evaluated them.
 
 RESULT
 
